@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/bhj0eks.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          'termina': ['Termina']
+        },
+        extend: {
+          colors: {
+            'main-blue': "#000248",
+            'main-red': "#ff4848"
+          },
+          backgroundImage: {
+            'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+          }
+        }
+      }
+    }
+  </script>
+  <title>Document</title>
+</head>
+
+<body class="font-['Termina']">
+
+  <nav class="fixed left-0 top-0 w-full z-[100]">
+    <div class="container mx-auto my-16 flex justify-between text-white">
+      <img src="./images/Move_Logo.png" alt="logo">
+
+      <div class="flex items-center">
+        <ul class="flex text-4xl font-bold">
+          <li class="mr-24">O NAS</li>
+          <li class="mr-24">PORTFOLIO</li>
+          <li class="mr-24">KONTAKT</li>
+        </ul>
+
+        <div>
+          <p>
+            <span class="font-bold">PL</span>
+            /
+            <span>ENG</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="w-100 flex bg-main-blue min-h-screen">
+    <div class="bg-gradient-to-b from-main-red to-transparent h-3/5 flex w-full absolute -top-20">
+    </div>
+
+    <div class="container mx-auto flex items-center text-white min-h-full">
+      <div class="z-[5]">
+        <h1 class="text-9xl font-black">
+          PROJEKT<br />
+          SPORT
+        </h1>
+
+        <button class="text-5xl font-bold bg-rose-600 px-12 py-5 rounded-full mt-12">
+          WYCENA
+        </button>
+      </div>
+
+
+      <div class="absolute right-0 z-[3]">
+        <img src="./images/hero-image.png" />
+      </div>
+    </div>
+  </section>
+
+  <section class="w-100 bg-white text-center my-32">
+
+    <h2
+      class="text-7xl font-bold mb-16 text-main-blue before:block before:w-4 before:h-20 before:rotate-45 before:bg-rose-600 before:absolute before:-left-12 before:bottom-2 relative inline-block">
+      KIM JESTEŚMY?
+    </h2>
+
+    <p class="text-3xl font-medium mb-16">
+      Move to sportowa agencja brandingowa, która specjalizuje się <br />
+      w budowie wizualnego wizerunku klubów sportowych oraz sportowców.<br />
+      Tworzymy markę klubu, który jest z łatwością rozpoznawalny w sieci i stanowi<br />
+      atrakcyjną ofertę dla zawodników, kibiców oraz sponsorów.
+    </p>
+
+    <button class="text-5xl font-bold bg-rose-600 px-12 py-5 rounded-full text-white">
+      CZYTAJ WIĘCEJ
+    </button>
+  </section>
+
+  <section class="w-100 bg-main-blue text-center relative">
+    <div class="bg-gradient-to-b from-main-red to-transparent h-96 flex w-full absolute top-0">
+    </div>
+    <div class="container mx-auto text-white relative">
+      <h2
+        class="text-7xl font-bold pt-32 pb-16 before:block before:w-4 before:h-20 before:rotate-45 before:bg-rose-600 before:absolute before:-left-12 before:top-28 relative inline-block">
+        NASZE REALIZACJE
+      </h2>
+
+      <h3 class="text-5xl font-semibold mb-8">
+        Plakaty sportowe
+      </h3>
+
+      <p class="text-3xl mb-6">
+        Ukazanie sportowych emocji to nasza specjalność.<br />
+        Stworzymy dla Ciebie projekty uwieczniające sukcesy klubu, historyczne <br />
+        transfery, osiągnięcia indywidualne oraz podziękowania.
+      </p>
+
+      <img src="./images/homepage/home-posters.png" class="mb-12" />
+
+      <h3 class="text-5xl font-semibold mb-8">
+        Identyfikacja wizualna
+      </h3>
+
+      <p class="text-3xl mb-6">
+        Dla zbudowania siły przkazu zadbamy o kompleksowy wizerunek klubu.<br />
+        Zaprojektujemy herb oraz identyfikację wizualną, która będzie wizytówką zespołu<br />
+        na boisku i w mediach społecznościowych ale również zadbamy o jakość gadżetów<br />
+        klubowych i zasoby biurowe (papier, wizytówki, teczki).
+      </p>
+
+      <img src="./images/homepage/home-visual identification.png" class="mb-12" />
+
+      <h3 class="text-5xl font-semibold mb-8">
+        Media społecznościowe
+      </h3>
+
+      <p class="text-3xl mb-6">
+        Wykorzystując najsilniejszy środek promocji - media społecznościowe, stworzymy<br />
+        spójny projekt oprawy graficznej klubu. Przekażemy kibicom najważniejsze informacje z życia drużyny - plakaty
+        meczowe, wyniki, transfery, osiągnięcia.
+      </p>
+
+      <img src="./images/homepage/home-socials.png" class="mb-12" />
+
+      <h3 class="text-5xl font-semibold mb-8">
+        Oferty sponsorskie
+      </h3>
+
+      <p class="text-3xl mb-6">
+        Oprawimy graficznie ofertę sponsorską dla Twojego klubu.<br />
+        Damy Ci podkład do jasnej rozmowy z potencjalnym sponsorem,<br />
+        który przedstawia warunki współpracy i płynące z niej korzyści.
+      </p>
+
+      <img src="./images/homepage/home-sponsorship.png" />
+
+    </div>
+  </section>
+
+  <section class="bg-main-blue relative w-100">
+    <div class="container mx-auto py-32 text-center ">
+      <p class="text-white text-3xl">
+        Masz pytania? Skontaktuj się z nami<br />
+        za pomocą formularza kontaktowego.
+      </p>
+
+      <button class="text-5xl font-bold bg-rose-600 px-12 py-5 rounded-full mt-12 inline-block text-white">
+        KONTAKT
+      </button>
+    </div>
+  </section>
+
+  <footer class="bg-rose-600 text-white py-24">
+    <div class="container mx-auto flex text-left">
+      <div class="flex-2 mr-24">
+        <img src="./images/Move_Logo.png" alt="logo">
+      </div>
+
+      <div class="flex flex-col flex-2 mr-24">
+        <h3 class="text-4xl font-bold mb-8 mt-2">KONTAKT:</h3>
+        <a class="text-3xl mb-4">biuro@move.com</a>
+        <a class="text-3xl">+48 791 243 101</a>
+      </div>
+
+      <div class="flex-1">
+        <h3 class="text-4xl font-bold mb-3 mt-2">ZNAJDŹ NAS:</h3>
+        <div class="flex items-center">
+          <img src="./images/social icons/fb-logo.png" alt="" class="mr-4 h-[45px]">
+          <img src="./images/social icons/instagram-logo.png" alt="" class="mr-4 h-[46px]">
+          <img src="./images/social icons/behance-logo.png" alt="" class="mr-4 h-[35px]">
+          <img src="./images/social icons/pinterest-logo.png" alt="" class="mr-4 h-[45px]">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
