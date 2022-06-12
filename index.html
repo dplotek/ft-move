@@ -31,11 +31,11 @@
 <body class="font-['Termina']">
 
   <nav class="fixed left-0 top-0 w-full z-[100] bg-main-red">
-    <div class="container mx-auto my-4 flex justify-between text-white">
+    <div class="container mx-auto my-16 flex justify-between text-white">
       <img src="./images/Move_Logo.png" alt="logo">
 
       <div class="flex items-center">
-        <ul class="flex text-2xl font-bold">
+        <ul class="flex text-4xl font-bold">
           <li class="mr-24">O NAS</li>
           <li class="mr-24">PORTFOLIO</li>
           <li class="mr-24">KONTAKT</li>
@@ -192,6 +192,36 @@
     </div>
   </footer>
 
+  <!-- Messenger Wtyczka czatu Code -->
+  <div id="fb-root"></div>
+
+  <!-- Your Wtyczka czatu code -->
+  <div id="fb-customer-chat" class="fb-customerchat">
+  </div>
+
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "108922930684480");
+    chatbox.setAttribute("attribution", "biz_inbox");
+  </script>
+
+  <!-- Your SDK code -->
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        xfbml            : true,
+        version          : 'v14.0'
+      });
+    };
+
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/pl_PL/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
 </body>
 
 </html>
