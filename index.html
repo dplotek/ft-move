@@ -31,15 +31,32 @@
 
 <body class="font-['Termina']">
 
-  <nav class="fixed left-0 top-0 w-full z-[100] drop-shadow-2xl">
-    <div class="container mx-auto my-4 flex justify-between text-white">
-      <img src="./images/Move_Logo.png" alt="logo" class="w-52">
+  <nav class="fixed left-0 top-0 lg:block w-full z-[100] drop-shadow-2xl h-fit lg:bg-transparent bg-main-red px-2">
+    <div class="container mx-auto my-4 flex justify-between text-white flex-row flex-col lg:flex-row">
+      <div class="lg:block flex justify-between">
+        <img src="./images/Move_Logo.png" alt="logo" class="w-52">
 
-      <div class="flex items-center">
-        <ul class="flex text-xl font-bold">
-          <li class="mr-14">O NAS</li>
-          <li class="mr-14">PORTFOLIO</li>
-          <li class="mr-14">KONTAKT</li>
+        <div class="lg:hidden flex flex-col justify-between z-[101] duration-500" id="hamburger">
+          <button class="text-gray-500 w-10 h-10 relative bg-white">
+            <div class="flex items-center justify-center relative">
+              <span id="hamburger1"
+                class="flex absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out translate-y-1.5">
+              </span>
+              <span id="hamburger2"
+                class="flex absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out"></span>
+              <span id="hamburger3"
+                class="flex absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out -translate-y-1.5"></span>
+            </div>
+          </button>
+        </div>
+      </div>
+
+
+      <div class="lg:flex hidden lg:items-center md:items-start flex-col lg:flex-row duration-500" id="menu-items">
+        <ul class="flex text-xl font-bold flex-col lg:flex-row lg:my-0 my-4">
+          <li class="mr-14 md:my-1">O NAS</li>
+          <li class="mr-14 md:my-1">PORTFOLIO</li>
+          <li class="mr-14 md:my-1">KONTAKT</li>
         </ul>
 
         <div>
@@ -90,7 +107,8 @@
       atrakcyjną ofertę dla zawodników, kibiców oraz sponsorów.
     </p>
 
-    <button class="text-3xl font-bold bg-main-red px-12 py-5 rounded-full text-white tracking-wider">
+    <button
+      class="text-3xl font-bold bg-main-red px-12 py-5 rounded-full text-white tracking-wider hover:scale-110 duration-300">
       CZYTAJ WIĘCEJ
     </button>
   </section>
@@ -101,7 +119,7 @@
     <div class="container mx-auto text-white relative">
       <h2
         class="text-7xl font-bold pt-32 pb-16 before:block before:w-4 before:h-20 before:rotate-45 before:bg-main-red before:absolute before:-left-12 before:top-28 relative inline-block">
-        NASZE REALIZACJE
+        NASZA OFERTA
       </h2>
 
       <h3 class="text-5xl font-semibold mb-8">
@@ -172,18 +190,24 @@
 
   <footer class="bg-main-red text-white py-24">
     <div class="container mx-auto flex text-left">
-      <div class="flex-2 mr-24">
+      <div class="mr-24">
         <img src="./images/Move_Logo.png" alt="logo">
       </div>
 
-      <div class="flex flex-col flex-2 mr-24">
-        <h3 class="text-4xl font-bold mb-8 mt-2">KONTAKT:</h3>
-        <a class="text-3xl mb-4">biuro@move-agency.com</a>
-        <a class="text-3xl">+48 791 243 101</a>
+      <div class="flex flex-col mr-24">
+        <h3 class="text-xl font-bold mb-8 mt-2">KONTAKT:</h3>
+        <a class="text-lg mb-4">biuro@move-agency.com</a>
+        <a class="text-lg">+48 791 243 101</a>
       </div>
 
-      <div class="flex-1">
-        <h3 class="text-4xl font-bold mb-3 mt-2">ZNAJDŹ NAS:</h3>
+      <div class="flex flex-col mr-24">
+        <h3 class="text-xl font-bold mb-8 mt-2">DANE FIRMY:</h3>
+        <a class="text-lg mb-4">NIP: 6182193484</a>
+        <a class="text-lg">REGON: 522259969</a>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold mb-3 mt-2">ZNAJDŹ NAS:</h3>
         <div class="flex items-center">
           <img src="./images/social icons/fb-logo.png" alt="" class="mr-4 h-[45px]">
           <img src="./images/social icons/instagram-logo.png" alt="" class="mr-4 h-[46px]">
@@ -198,7 +222,7 @@
   <div id="fb-customer-chat" class="fb-customerchat"></div>
 
   <script src="scripts/utils.js"></script>
-  <script src="scripts/facebookChat.js"></script>
+  <!-- <script src="scripts/facebookChat.js"></script> -->
 
 </body>
 
