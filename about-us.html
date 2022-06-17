@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/bhj0eks.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          'termina': ['Termina']
+        },
+        extend: {
+          colors: {
+            'main-blue': "#000248",
+            'main-red': "#ff4848"
+          },
+          backgroundImage: {
+            'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+          }
+        }
+      }
+    }
+  </script>
+  <title>Move Desing Agency</title>
+</head>
+
+<body class="font-['Termina']">
+  <nav class="fixed left-0 top-0 lg:block w-full z-[100] drop-shadow-2xl h-fit lg:bg-transparent bg-main-red px-6">
+    <div class="container mx-auto my-4 flex justify-between text-white flex-row flex-col lg:flex-row">
+      <div class="lg:block flex justify-between">
+        <a href="/index.html">
+          <img src="./images/Move_Logo.png" alt="logo" class="w-52">
+        </a>
+
+        <div class="lg:hidden flex flex-col justify-between z-[101] duration-500" id="hamburger">
+          <button class="text-gray-500 w-10 h-10 relative bg-white">
+            <div class="flex items-center justify-center relative">
+              <span id="hamburger1"
+                class="flex absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out translate-y-1.5">
+              </span>
+              <span id="hamburger2"
+                class="flex absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out"></span>
+              <span id="hamburger3"
+                class="flex absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out -translate-y-1.5"></span>
+            </div>
+          </button>
+        </div>
+      </div>
+
+
+      <div class="lg:flex hidden lg:items-center md:items-start flex-col lg:flex-row duration-500" id="menu-items">
+        <ul class="flex text-xl font-bold flex-col lg:flex-row lg:my-0 my-4">
+          <li class="mr-14 md:my-2">
+            <a href="/about-us.html">
+              O NAS
+            </a>
+          </li>
+          <li class="mr-14 md:my-2">PORTFOLIO</li>
+          <li class="mr-14 md:my-2">KONTAKT</li>
+        </ul>
+
+        <div>
+          <p class="text-sm">
+            <span class="font-bold">PL</span>
+            /
+            <span>ENG</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="bg-main-blue pt-48 text-white text-center relative">
+    <div class="bg-gradient-to-b from-main-red to-transparent h-96 flex w-full absolute top-0"></div>
+    <div class="container mx-auto relative">
+      <h2
+        class="xl:text-7xl lg:text-6xl md:text-5xl text-3xl font-bold xl:mb-16 lg:mb-8 mb-4 before:block before:w-4 before:h-20 before:rotate-45 before:bg-main-red before:absolute before:-left-12 before:bottom-2 relative inline-block">
+        O NAS
+      </h2>
+
+      <p class="xl:text-3xl lg:text-2xl md:text-xl text-md mb-6">
+        Jesteśmy <strong>sportową agencją brandingową</strong>, która z grafiką i sportem
+        ma do czynienia od wielu lat. Budujemy wyrazisty, łatwy do zapamiętania
+        oraz skuteczny wizerunek klubu i sportowca.
+      </p>
+
+      <br />
+
+      <p class="xl:text-3xl lg:text-2xl md:text-xl text-md mb-6">
+        <strong>Naszym celem jest</strong> stworzenie marki w sporcie. która będzie stanowić
+        atrakcyjną ofertę dla sportowców, sponsorów oraz kibiców
+      </p>
+
+      <div class="my-20">
+        <img src="/images/ceo.png" alt="CEO Move agency" class="mx-auto">
+        <h3 class="xl:text-5xl lg:text-4xl md:text-3xl text-2xl font-semibold mt-10">FILIP TROCZYŃSKI</h3>
+        <p class="xl:text-2xl lg:xl md:text-lg text-base md:mt-4 mt-2">CEO</p>
+      </div>
+
+      <p class="xl:text-3xl lg:text-2xl md:text-xl text-md mb-6">
+        Łączę ponad 10-letnie doświadczenie w sporcie zawodowym
+        z 5-letnim doświadczeniem w branży graficznej. Doskonale czuję
+        sportowe emocje i wiem jak przekazać je na projekcie.
+      </p>
+
+      <br />
+
+      <p class="xl:text-3xl lg:text-2xl md:text-xl text-md mb-6">
+        Pracowałem jako freelancer dla klubów sportowych, lokalnych gazet,
+        klientów z branży gastronomicznej, ubezpieczeniowej czy leczniczej.
+        Ostatni rok spędziłem na pracy w agencji reklamowej.
+      </p>
+
+      <br />
+
+      <p class="xl:text-3xl lg:text-2xl md:text-xl text-md pb-6">
+        Podczas projektu chcę zaangażować klienta w proces tworzenia.
+        Pragnę poznać jego wizję, przedstawić najlepsze możliwe rozwiązania
+        i przeprowadzić przez etapy projetowania aby na koniec
+        uzyskać oczekiwany efekt.
+      </p>
+
+    </div>
+  </section>
+
+  <section class="bg-main-blue relative w-100">
+    <div class="container mx-auto py-32 text-center ">
+      <p class="text-white xl:text-3xl lg:text-2xl md:text-xl text-lg">
+        Skorzystaj z formularza kontaktowego<br />
+        w celu uzyskania darmowej wyceny.
+      </p>
+
+      <button
+        class="lg:text-3xl sm:text-xl text-base font-bold bg-main-red px-12 py-5 rounded-full mt-12 inline-block text-white tracking-wider">
+        WYCENA
+      </button>
+    </div>
+  </section>
+
+  <footer class="bg-main-red text-white py-24 px-6">
+    <div class="container mx-auto grid lg:grid-cols-4 md:grid-cols-1 gap-4 text-left">
+      <div class="mb-4">
+        <img src="./images/Move_Logo.png" alt="logo">
+      </div>
+
+      <div class="mb-4">
+        <h3 class="text-xl font-bold mb-3 mt-2">KONTAKT:</h3>
+        <div class="flex flex-col">
+          <a class="text-lg">biuro@move-agency.com</a>
+          <a class="text-lg">+48 791 243 101</a>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <h3 class="text-xl font-bold mb-3 mt-2">DANE FIRMY:</h3>
+        <div class="flex flex-col">
+          <a class="text-lg">NIP: 6182193484</a>
+          <a class="text-lg">REGON: 522259969</a>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <h3 class="text-xl font-bold mb-3 mt-2">ZNAJDŹ NAS:</h3>
+        <div class="flex items-center">
+          <img src="./images/social icons/fb-logo.png" alt="" class="mr-4 h-[45px]">
+          <img src="./images/social icons/instagram-logo.png" alt="" class="mr-4 h-[46px]">
+          <img src="./images/social icons/behance-logo.png" alt="" class="mr-4 h-[35px]">
+          <img src="./images/social icons/pinterest-logo.png" alt="" class="mr-4 h-[45px]">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/utils.js"></script>
+  <script src="scripts/facebookChat.js"></script>
+</body>
+
+</html>
