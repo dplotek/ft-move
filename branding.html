@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/bhj0eks.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          'termina': ['Termina']
+        },
+        extend: {
+          colors: {
+            'main-blue': "#000248",
+            'main-red': "#ff4848"
+          },
+          backgroundImage: {
+            'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+          }
+        }
+      }
+    }
+  </script>
+  <title>Move Desing Agency</title>
+</head>
+
+<body class="font-['Termina']">
+  <nav class="fixed left-0 top-0 lg:block w-full z-[100] drop-shadow-2xl h-fit lg:bg-transparent bg-main-red px-6">
+    <div class="container mx-auto my-4 flex justify-between text-white flex-row flex-col lg:flex-row">
+      <div class="lg:block flex justify-between">
+        <a href="index.html">
+          <img src="./images/Move_Logo.png" alt="logo" class="w-52">
+        </a>
+
+        <div class="lg:hidden flex flex-col justify-between z-[101] duration-500" id="hamburger">
+          <button class="text-gray-500 w-10 h-10 relative bg-white">
+            <div class="flex items-center justify-center relative">
+              <span id="hamburger1"
+                class="flex absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out translate-y-1.5">
+              </span>
+              <span id="hamburger2"
+                class="flex absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out"></span>
+              <span id="hamburger3"
+                class="flex absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out -translate-y-1.5"></span>
+            </div>
+          </button>
+        </div>
+      </div>
+
+
+      <div class="lg:flex hidden lg:items-center md:items-start flex-col lg:flex-row duration-500" id="menu-items">
+        <ul class="flex text-xl font-bold flex-col lg:flex-row lg:my-0 my-4">
+          <li class="mr-14 md:my-2">
+            <a href="about-us.html">
+              O NAS
+            </a>
+          </li>
+          <li class="mr-14 md:my-2">PORTFOLIO</li>
+          <li class="mr-14 md:my-2">KONTAKT</li>
+        </ul>
+
+        <div>
+          <p class="text-sm">
+            <span class="font-bold">PL</span>
+            /
+            <span>ENG</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="w-100 flex bg-main-blue text-white">
+    <div class="bg-gradient-to-b from-main-red to-transparent h-96 flex w-full absolute top-0">
+    </div>
+    <div class="container mx-auto py-48 text-center relative px-6">
+      <h2
+        class="xl:text-7xl lg:text-6xl md:text-5xl text-3xl font-bold mb-4 before:block before:w-4 before:h-20 before:rotate-45 before:bg-main-red before:absolute before:-left-12 before:bottom-2 relative inline-block">
+        PORTFOLIO
+      </h2>
+
+      <p class="xl:text-3xl lg:text-2xl md:text-xl text-md font-medium mb-12">
+        Identyfikacja wizualna
+      </p>
+
+      <img src="images/visual identification/metro-warszawa-business-card.png" />
+
+      <p class="xl:text-3xl lg:text-2xl md:text-xl text-md my-24">
+        Tworząc identyfikację dla klubu czy sportowca dbamy o wiele aspektów
+        wpływających na spójność przekazu. Oprócz projektu herbu i logo zadbamy
+        o odpowiednio dobrany font, kolorystykę, schematy i układy aby klub
+        i zawodnik tworzył spójny wizerunek w internecie i na boisku.
+      </p>
+
+      <div class="flex xl:mb-12 lg:mb-8 mb-4">
+        <div class="xl:mr-6 lg:mr-4 mr-2">
+          <img src="images/visual identification/metro-warszawa-signboard.png" alt="" />
+        </div>
+
+
+        <div class="flex flex-col justify-between xl:ml-6 lg:ml-4 ml-2">
+          <img src="images/visual identification/metro-warszawa-logo.png" />
+          <img src="images/visual identification/metro-warszawa-stickers.png" />
+        </div>
+      </div>
+
+      <div class="flex xl:mb-12 lg:mb-8 mb-4">
+        <div class="xl:mr-6 lg:mr-4 mr-2 flex flex-col justify-between">
+          <img src="images/visual identification/metro-warszawa-brief-case.png" alt="" />
+          <img src="images/visual identification/metro-warszawa-pins.png" />
+        </div>
+
+        <div class="flex xl:ml-6 lg:ml-4 ml-2">
+          <img src="images/visual identification/metro-warszawa-t-shirts.png" />
+        </div>
+      </div>
+
+      <div class="flex">
+        <div class="xl:mr-6 lg:mr-4 mr-2">
+          <img src="images/visual identification/metro-warszawa-billboard.png" alt="">
+        </div>
+
+        <div class="flex xl:ml-6 lg:ml-4 ml-2">
+          <img src="images/visual identification/metro-warszawa-face-mask.png" alt="">
+        </div>
+      </div>
+
+  </section>
+
+
+
+  <footer class="bg-main-red text-white py-24 px-6">
+    <div class="container mx-auto grid lg:grid-cols-4 md:grid-cols-1 gap-4 text-left">
+      <div class="mb-4">
+        <img src="./images/Move_Logo.png" alt="logo">
+      </div>
+
+      <div class="mb-4">
+        <h3 class="text-xl font-bold mb-3 mt-2">KONTAKT:</h3>
+        <div class="flex flex-col">
+          <a class="text-lg">biuro@move-agency.com</a>
+          <a class="text-lg">+48 791 243 101</a>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <h3 class="text-xl font-bold mb-3 mt-2">DANE FIRMY:</h3>
+        <div class="flex flex-col">
+          <a class="text-lg">NIP: 6182193484</a>
+          <a class="text-lg">REGON: 522259969</a>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <h3 class="text-xl font-bold mb-3 mt-2">ZNAJDŹ NAS:</h3>
+        <div class="flex items-center">
+          <img src="./images/social icons/fb-logo.png" alt="" class="mr-4 h-[45px]">
+          <img src="./images/social icons/instagram-logo.png" alt="" class="mr-4 h-[46px]">
+          <img src="./images/social icons/behance-logo.png" alt="" class="mr-4 h-[35px]">
+          <img src="./images/social icons/pinterest-logo.png" alt="" class="mr-4 h-[45px]">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/utils.js"></script>
+</body>
+
+</html>
