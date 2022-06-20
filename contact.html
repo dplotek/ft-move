@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://use.typekit.net/bhj0eks.css">
 
@@ -29,8 +29,8 @@
   <title>Move Desing Agency</title>
 </head>
 
-<body class="font-['Termina']">
-  <nav class="fixed left-0 top-0 lg:block w-full z-[100] drop-shadow-2xl h-fit lg:bg-transparent bg-main-red px-6">
+<body class="min-h-screen font-['Termina']">
+  <nav class="fixed left-0 top-0 lg:block w-full z-[100] drop-shadow-2xl h-fit bg-main-red px-6 bg-main-red">
     <div class="container mx-auto my-4 flex justify-between text-white flex-row flex-col lg:flex-row">
       <div class="lg:block flex justify-between">
         <a href="index.html">
@@ -105,64 +105,38 @@
     </div>
   </nav>
 
-  <section class="w-100 flex bg-main-blue text-white">
-    <div class="bg-gradient-to-b from-main-red to-transparent h-96 flex w-full absolute top-0">
-    </div>
-    <div class="container mx-auto py-48 text-center relative px-6">
+  <section class="w-100 bg-white my-32 px-8">
+    <div class="container mx-auto py-16">
       <h2
-        class="xl:text-7xl lg:text-6xl md:text-5xl text-3xl font-bold mb-4 before:block before:w-4 before:h-20 before:rotate-45 before:bg-main-red before:absolute before:-left-12 before:bottom-2 relative inline-block">
-        PORTFOLIO
+        class="xl:text-7xl lg:text-6xl md:text-5xl text-3xl font-bold xl:mb-16 lg:mb-8 mb-4 text-main-blue before:block before:w-4 before:h-20 before:rotate-45 before:bg-main-red before:absolute before:-left-12 before:bottom-2 relative inline-block">
+        NAPISZ DO NAS
       </h2>
 
-      <p class="xl:text-3xl lg:text-2xl md:text-xl text-md font-medium mb-12">
-        Identyfikacja wizualna
+      <p class="xl:text-3xl lg:text-2xl md:text-xl text-mdfont-medium mb-16 text-main-blue">
+        Masz pytania? Chcesz poznać wycenę?<br />
+        Skontaktuj się z nami.
       </p>
 
-      <img src="images/visual identification/metro-warszawa-business-card.png" />
-
-      <p class="xl:text-3xl lg:text-2xl md:text-xl text-md my-24">
-        Tworząc identyfikację dla klubu czy sportowca dbamy o wiele aspektów
-        wpływających na spójność przekazu. Oprócz projektu herbu i logo zadbamy
-        o odpowiednio dobrany font, kolorystykę, schematy i układy aby klub
-        i zawodnik tworzył spójny wizerunek w internecie i na boisku.
-      </p>
-
-      <div class="flex xl:mb-12 lg:mb-8 mb-4">
-        <div class="xl:mr-6 lg:mr-4 mr-2">
-          <img src="images/visual identification/metro-warszawa-signboard.png" alt="" />
+      <form class="max-w-screen-xl">
+        <div class="flex md:flex-row flex-col">
+          <input placeholder="e-mail"
+            class="border-solid border-2 border-main-blue rounded-full px-4 py-1 flex-2  mt-8" />
+          <input placeholder="Imię, Nazwisko, Zespół"
+            class="border-solid border-2 border-main-blue rounded-full px-4 py-1 flex-1 md:ml-8 ml-0 mt-8" />
         </div>
 
-
-        <div class="flex flex-col justify-between xl:ml-6 lg:ml-4 ml-2">
-          <img src="images/visual identification/metro-warszawa-logo.png" />
-          <img src="images/visual identification/metro-warszawa-stickers.png" />
+        <div>
+          <textarea placeholder="treść..."
+            class="border-solid border-2 border-main-blue px-4 py-1 resize-none w-full rounded-lg my-8"
+            rows="10"></textarea>
         </div>
-      </div>
-
-      <div class="flex xl:mb-12 lg:mb-8 mb-4">
-        <div class="xl:mr-6 lg:mr-4 mr-2 flex flex-col justify-between">
-          <img src="images/visual identification/metro-warszawa-brief-case.png" alt="" />
-          <img src="images/visual identification/metro-warszawa-pins.png" />
-        </div>
-
-        <div class="flex xl:ml-6 lg:ml-4 ml-2">
-          <img src="images/visual identification/metro-warszawa-t-shirts.png" />
-        </div>
-      </div>
-
-      <div class="flex">
-        <div class="xl:mr-6 lg:mr-4 mr-2">
-          <img src="images/visual identification/metro-warszawa-billboard.png" alt="">
-        </div>
-
-        <div class="flex xl:ml-6 lg:ml-4 ml-2">
-          <img src="images/visual identification/metro-warszawa-face-mask.png" alt="">
-        </div>
-      </div>
-
+        <button
+          class="lg:text-3xl sm:text-xl text-base font-bold bg-main-blue px-12 py-5 rounded-full text-white tracking-wider">
+          WYŚLIJ
+        </button>
+      </form>
+    </div>
   </section>
-
-
 
   <footer class="bg-main-red text-white py-24 px-6">
     <div class="container mx-auto grid lg:grid-cols-4 md:grid-cols-1 gap-4 text-left">
@@ -197,7 +171,6 @@
       </div>
     </div>
   </footer>
-
   <script src="scripts/utils.js"></script>
 </body>
 

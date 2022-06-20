@@ -3,12 +3,15 @@ let open = false
 const menuItems = document.getElementById("menu-items")
 
 window.addEventListener("scroll", () => {
+  const url = window.location.pathname
   const yOffset = window.pageYOffset
-  if (yOffset > 10) {
-    navbar.classList.add("bg-main-red")
-    navbar.classList.remove("lg:bg-transparent")
-  } else {
-    navbar.classList.add("lg:bg-transparent")
+  if (url !== "/contact.html") {
+    if (yOffset > 10) {
+      navbar.classList.add("bg-main-red")
+      navbar.classList.remove("lg:bg-transparent")
+    } else {
+      navbar.classList.add("lg:bg-transparent")
+    }
   }
 })
 
