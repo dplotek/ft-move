@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://use.typekit.net/bhj0eks.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <script>
     tailwind.config = {
@@ -142,9 +143,15 @@
       </p>
 
       <div class="flex">
-        <div><img src="images/socials/socials-ig-1.png" /></div>
-        <div class="mx-8"><img src="images/socials/socials-ig-2.png" /></div>
-        <div><img src="images/socials/socials-ig-3.png" /></div>
+        <div data-aos="fade-right">
+          <img src="images/socials/socials-ig-1.png" />
+        </div>
+        <div class="mx-8" data-aos="fade-right" data-aos-delay="200">
+          <img src="images/socials/socials-ig-2.png" />
+        </div>
+        <div data-aos="fade-right" data-aos-delay="400">
+          <img src="images/socials/socials-ig-3.png" />
+        </div>
       </div>
 
       <p class="xl:text-3xl lg:text-2xl md:text-xl text-md font-medium my-24">
@@ -153,9 +160,9 @@
         Instagram czy Twitter.
       </p>
 
-      <img src="images/socials/socials-1.png" class="mb-12" />
-      <img src="images/socials/socials-2.png" class="mb-12" />
-      <img src="images/socials/socials-3.png" class="mb-12" />
+      <img src="images/socials/socials-1.png" class="mb-12" data-aos="zoom-in-up" />
+      <img src="images/socials/socials-2.png" class="mb-12" data-aos="zoom-in-up" />
+      <img src="images/socials/socials-3.png" class="mb-12" data-aos="zoom-in-up" />
     </div>
   </section>
 
@@ -194,6 +201,10 @@
   </footer>
 
   <script src="scripts/utils.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
