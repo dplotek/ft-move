@@ -31,10 +31,10 @@
 
 <body class="font-['Termina']">
   <nav class="fixed left-0 top-0 lg:block w-full z-[100] drop-shadow-2xl h-fit lg:bg-transparent bg-main-red px-6">
-    <div class="container mx-auto my-4 flex justify-between text-white flex-row flex-col lg:flex-row">
-      <div class="lg:block flex justify-between">
+    <div class="container mx-auto my-4 flex justify-between text-white flex-col lg:flex-row">
+      <div class="flex h-full justify-between items-center">
         <a href="index.html">
-          <img src="./images/Move_Logo.png" alt="logo" class="w-52">
+          <img src="./images/Move_Logo.png" alt="logo" class="w-48 mt-0 lg:mt-1">
         </a>
 
         <div class="lg:hidden flex flex-col justify-between z-[101] duration-500" id="hamburger">
@@ -106,7 +106,12 @@
   </nav>
 
   <section class="w-100 flex bg-main-blue text-white">
-    <div class="bg-gradient-to-b from-main-red to-transparent h-96 flex w-full absolute top-0">
+    <div class="absolute top-0 left-0 w-screen min-h-screen">
+      <div class="flex w-full absolute h-full rotate-180 -top-96" style="
+      background: radial-gradient(circle farthest-side,#ff4848, transparent);
+      background-size: 100% 220%;
+      ">
+      </div>
     </div>
     <div class="container mx-auto py-48 text-center relative px-6">
       <h2
