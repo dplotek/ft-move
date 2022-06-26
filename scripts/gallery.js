@@ -4,7 +4,7 @@ const body = document.querySelector("body")
 const allImages = [...document.querySelectorAll("img")]
 console.log(allImages)
 
-let currentImg = "http://127.0.0.1:5500/images/posters/Poster-Naomi_Osaka.webp"
+let currentImg = "images/posters/Poster-Naomi_Osaka.webp"
 const behance = true
 
 const createPopup = () => {
@@ -51,7 +51,7 @@ const createPopup = () => {
   //behanceHref
   const behanceHref = document.createElement("a")
   const behanceIcon = document.createElement("img")
-  behanceIcon.setAttribute("src", "../images/social icons/behance-logo.png")
+  behanceIcon.setAttribute("src", "images/social icons/behance-logo.png")
   behanceHref.setAttribute("href", "google.pl")
   behanceHref.appendChild(behanceIcon)
   behance && descriptionBox.appendChild(behanceHref)
