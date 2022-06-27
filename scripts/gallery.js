@@ -10,29 +10,37 @@ const behance = true
 const createPopup = () => {
   //popup
   const popup = document.createElement("div")
-  popup.classList.add("fixed", "top-0", "left-0", "w-screen", "h-screen", "bg-black/[0.6]", "p-12")
+  popup.classList.add(
+    "fixed",
+    "top-0",
+    "left-0",
+    "w-screen",
+    "h-screen",
+    "bg-black/[0.6]",
+    "flex",
+    "items-center",
+    "justify-center",
+    "z-[100]"
+  )
   body.appendChild(popup)
 
   //wrapper
   const wrapper = document.createElement("div")
-  wrapper.classList.add("relative", "h-full", "w-fit", "mx-auto", "flex", "items-center", "justify-center")
+  wrapper.classList.add("flex", "flex-col", "h-5/6", "relative")
   popup.appendChild(wrapper)
-
-  //container
-  const container = document.createElement("div")
-  wrapper.appendChild(container)
 
   //image
   const image = document.createElement("img")
-  container.classList.add("relative")
-  container.appendChild(image)
   image.setAttribute("src", currentImg)
+  image.classList.add("h-5/6")
+  wrapper.appendChild(image)
+
 
   //closeButton
   const closeButton = document.createElement("button")
   closeButton.classList.add("absolute", "-top-6", "-right-6", "text-white")
   closeButton.textContent = "X"
-  container.appendChild(closeButton)
+  wrapper.appendChild(closeButton)
   closeButton.addEventListener("click", () => {
     body.removeChild(popup)
   })
@@ -40,7 +48,7 @@ const createPopup = () => {
   //descriptionBox
   const descriptionBox = document.createElement("div")
   descriptionBox.classList.add("bg-main-blue", "w-full")
-  container.appendChild(descriptionBox)
+  wrapper.appendChild(descriptionBox)
 
   //descriptionHeader
   const descriptionHeader = document.createElement("p")
@@ -60,13 +68,13 @@ const createPopup = () => {
   const nextArrow = document.createElement("button")
   nextArrow.textContent = ">"
   nextArrow.classList.add("absolute", "top-1/2", "translate-y-1/2", "-right-10", "text-3xl", "text-white")
-  container.appendChild(nextArrow)
+  wrapper.appendChild(nextArrow)
 
   //prevArrow
   const prevArrow = document.createElement("button")
   prevArrow.textContent = "<"
   prevArrow.classList.add("absolute", "top-1/2", "translate-y-1/2", "-left-10", "text-3xl", "text-white")
-  container.appendChild(prevArrow)
+  wrapper.appendChild(prevArrow)
 }
 
 const setCurrentImage = () => {
