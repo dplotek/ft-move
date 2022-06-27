@@ -20,35 +20,44 @@ const createPopup = () => {
     "flex",
     "items-center",
     "justify-center",
-    "z-[100]"
+    "z-[100]",
+    "p-10"
   )
   body.appendChild(popup)
 
   //wrapper
   const wrapper = document.createElement("div")
-  wrapper.classList.add("flex", "flex-col", "h-5/6", "relative")
+  wrapper.classList.add("h-5/6", "relative")
   popup.appendChild(wrapper)
 
-  //image
-  const image = document.createElement("img")
-  image.setAttribute("src", currentImg)
-  image.classList.add("h-5/6")
-  wrapper.appendChild(image)
+  //container
+  const container = document.createElement("div")
+  container.classList.add("relative", "h-full", "flex", "justify-center", "flex-col", "flex-end")
+  wrapper.appendChild(container)
 
+  const closeButtonContainer = document.createElement("div")
+  closeButtonContainer.classList.add("text-end", "-mr-4")
+  container.appendChild(closeButtonContainer) // tutaj wrapper
 
   //closeButton
   const closeButton = document.createElement("button")
-  closeButton.classList.add("absolute", "-top-6", "-right-6", "text-white")
+  closeButton.classList.add("text-white")
   closeButton.textContent = "X"
-  wrapper.appendChild(closeButton)
+  closeButtonContainer.appendChild(closeButton) // tutaj wrapper
   closeButton.addEventListener("click", () => {
     body.removeChild(popup)
   })
 
+  //image
+  const image = document.createElement("img")
+  image.setAttribute("src", currentImg)
+  image.classList.add("md:h-full")
+  container.appendChild(image) // tutaj wrapper
+
   //descriptionBox
   const descriptionBox = document.createElement("div")
   descriptionBox.classList.add("bg-main-blue", "w-full")
-  wrapper.appendChild(descriptionBox)
+  container.appendChild(descriptionBox) //tutaj wrapper
 
   //descriptionHeader
   const descriptionHeader = document.createElement("p")
@@ -67,14 +76,14 @@ const createPopup = () => {
   //nextArrow
   const nextArrow = document.createElement("button")
   nextArrow.textContent = ">"
-  nextArrow.classList.add("absolute", "top-1/2", "translate-y-1/2", "-right-10", "text-3xl", "text-white")
-  wrapper.appendChild(nextArrow)
+  nextArrow.classList.add("absolute", "top-1/2", "translate-y-1/2", "-right-8", "text-3xl", "text-white")
+  container.appendChild(nextArrow) // tutaj wrapper
 
   //prevArrow
   const prevArrow = document.createElement("button")
   prevArrow.textContent = "<"
-  prevArrow.classList.add("absolute", "top-1/2", "translate-y-1/2", "-left-10", "text-3xl", "text-white")
-  wrapper.appendChild(prevArrow)
+  prevArrow.classList.add("absolute", "top-1/2", "translate-y-1/2", "-left-8", "text-3xl", "text-white")
+  container.appendChild(prevArrow) //tutaj wrapper
 }
 
 const setCurrentImage = () => {

@@ -12,13 +12,6 @@ window.addEventListener("scroll", () => {
   }
 })
 
-// window.addEventListener("resize", () => {
-//   const windowWidth = window.innerWidth
-//   if (windowWidth > 1024) {
-//     navbar.classList.add("bg-main-red")
-//   }
-// })
-
 const hamburger = document.getElementById("hamburger")
 const hamburger1 = document.getElementById("hamburger1")
 const hamburger2 = document.getElementById("hamburger2")
