@@ -1,0 +1,14 @@
+### PROTECT FILES ###
+<FilesMatch "\.(htaccess|htpasswd|ini|fla|psd|log|sh)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+
+RewriteEngine on
+RewriteRule o-nas about-us.html
+RewriteRule oferta-brandingowa branding.html
+RewriteRule kontakt contact.html
+RewriteRule portfolio portfolio.html
+RewriteRule plakaty-sportowe posters.html
+RewriteRule social-media socials.html
+RewriteRule oferty-sponsorskie sponsorship-offers.html
