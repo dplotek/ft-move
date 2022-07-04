@@ -97,12 +97,6 @@ let postersUtils = [
     src: "images/posters/Poster-Kubiak.webp",
   },
   {
-    id: "judd_trump",
-    name: "Judd Trump",
-    category: "posters",
-    src: "images/posters/Poster-Judd_Trump.webp",
-  },
-  {
     id: "dominik_jaglarski",
     name: "Dominik Jaglarski",
     category: "posters",
