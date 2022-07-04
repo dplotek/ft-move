@@ -22,6 +22,9 @@
             'main-blue': "#000248",
             'main-red': "#ff4848"
           },
+          dropShadow: {
+            "3xl": '12px 15px 15px rgba(255, 72, 72, 0.55)'
+          },
           backgroundImage: {
             'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
           }
@@ -59,7 +62,7 @@
 
       <div class="lg:flex hidden lg:items-center md:items-start flex-col lg:flex-row duration-500" id="menu-items">
         <ul class="flex text-xl font-bold flex-col lg:flex-row lg:my-0 my-4">
-          <li class="mr-14 md:my-2">
+          <li class="mr-14 md:my-2 hover:scale-110 transition duration-200 ease-in-out ">
             <a href="about-us.html">
               O NAS
             </a>
@@ -105,7 +108,7 @@
 
         <a href="contact.html">
           <button
-            class="lg:text-3xl sm:text-xl text-base font-bold bg-main-red px-12 py-5 rounded-full mt-12 tracking-wider hover:scale-105 duration-300">
+            class="lg:text-3xl sm:text-xl text-base font-bold bg-main-red px-12 py-5 rounded-full mt-12 tracking-wider hover:scale-105 duration-300 hover:drop-shadow-3xl">
             WYCENA
           </button>
         </a>

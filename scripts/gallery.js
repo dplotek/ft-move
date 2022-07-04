@@ -7,7 +7,7 @@ let postersUtils = [
     src: "images/posters/Poster-Naomi_Osaka.webp",
     category: "posters",
     behance: "https://www.behance.net/gallery/145629313/Project-sport",
-    instagram: "https://www.instagram.com/p/Cdayw_Zqfdb/",
+    instagram: "https://www.instagram.com/p/CddcNhPKbNE/",
     pinterest: "https://pl.pinterest.com/pin/603834262552051554/",
   },
   {
