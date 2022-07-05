@@ -21,7 +21,10 @@
             'main-red': "#ff4848"
           },
           dropShadow: {
-            "3xl": '0 35px 35px rgba(255, 72, 72, 0.55)'
+            "3xl": ' 35px 60px 35px rgba(255, 72, 72, 0.55)'
+          },
+          boxShadow: {
+            '3xl': '0px 0px 55px 16px rgba(255, 72, 72, 0.55)',
           },
           backgroundImage: {
             'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -59,30 +62,23 @@
 
       <div class="lg:flex hidden lg:items-center md:items-start flex-col lg:flex-row duration-500" id="menu-items">
         <ul class="flex text-xl font-bold flex-col lg:flex-row lg:my-0 my-4">
-          <li class="mr-14 md:my-2">
+          <li class="mr-14 md:my-2 hover:scale-110 transition duration-200 ease-in-out">
             <a href="about-us.html">
               O NAS
             </a>
           </li>
-          <li>
+          <li class="hover:scale-110 transition duration-200 ease-in-out">
             <a href="portfolio.html">
               <button class="mr-14 md:my-2">PORTFOLIO</button>
             </a>
           </li>
-          <li class="mr-14 md:my-2">
+          <li class="mr-14 md:my-2 hover:scale-110 transition duration-200 ease-in-out">
             <a href="contact.html">
               KONTAKT
             </a>
           </li>
         </ul>
 
-        <div>
-          <p class="text-sm">
-            <span class="font-bold">PL</span>
-            /
-            <span>ENG</span>
-          </p>
-        </div>
       </div>
     </div>
   </nav>
@@ -114,86 +110,122 @@
       <div class="flex xl:mb-12 lg:mb-8 mb-4">
         <div class="xl:mr-6 lg:mr-4 mr-2" data-aos="fade-left">
           <img src="images/posters/Poster-Naomi_Osaka.webp" id="naomi_osaka"
-            class="drop-shadow-2xl hover:drop-shadow-3xl hover:cursor-pointer transition duration-200 ease-in-out"
+            class="drop-shadow-2xl hover:shadow-3xl hover:cursor-pointer transition duration-200 ease-in-out"
             data-name="gallery" data-category="posters" />
         </div>
         <div class="xl:ml-6 lg:ml-4 ml-2" data-aos="fade-right">
-          <img src="images/posters/poster-klay_thopmson.webp" id="klay_thompson" class="drop-shadow-2xl"
+          <img src="images/posters/poster-klay_thopmson.webp" id="klay_thompson"
+            class="drop-shadow-2xl hover:shadow-3xl hover:cursor-pointer transition duration-200 ease-in-out"
             data-name="gallery" data-category="posters" />
         </div>
       </div>
 
       <div class="flex xl:mb-12 lg:mb-8 mb-4">
         <div class="xl:mr-6 lg:mr-4 mr-2" data-aos="fade-left">
-          <img src="images/posters/Poster-Michael_Jordan.webp" id="michael_jordan" class="drop-shadow-2xl"
+          <img src="images/posters/Poster-Michael_Jordan.webp" id="michael_jordan"
+            class="drop-shadow-2xl hover:shadow-3xl hover:cursor-pointer transition duration-200 ease-in-out"
             data-name="gallery" data-category="posters" />
         </div>
         <div class="xl:ml-6 lg:ml-4 ml-2" data-aos="fade-right">
-          <img src="images/posters/Poster-Conor_Mcgregor.webp" class="drop-shadow-2xl" id="conor_mcgregor"
+          <img src="images/posters/Poster-Conor_Mcgregor.webp"
+            class="drop-shadow-2xl hover:shadow-3xl hover:cursor-pointer transition duration-200 ease-in-out"
+            id="conor_mcgregor" data-name="gallery" data-category="posters" />
+        </div>
+      </div>
+
+      <div class="flex xl:mb-12 lg:mb-8 mb-4">
+        <div class="xl:mr-6 lg:mr-4 mr-2" data-aos="fade-left">
+          <img src="images/posters/Poster-Michal_Masny.webp"
+            class="drop-shadow-2xl hover:shadow-3xl hover:cursor-pointer transition duration-200 ease-in-out"
+            id="michal_masny" data-name="gallery" data-category="posters" />
+        </div>
+        <div class="xl:ml-6 lg:ml-4 ml-2" data-aos="fade-right">
+          <img src="images/posters/Poster-Zaksa.webp" id="zaksa"
+            class="drop-shadow-2xl hover:shadow-3xl hover:cursor-pointer transition duration-200 ease-in-out"
             data-name="gallery" data-category="posters" />
         </div>
       </div>
 
       <div class="flex xl:mb-12 lg:mb-8 mb-4">
         <div class="xl:mr-6 lg:mr-4 mr-2" data-aos="fade-left">
-          <img src="images/posters/Poster-Michal_Masny.webp" class="drop-shadow-2xl" id="michal_masny"
-            data-name="gallery" data-category="posters" />
+          <img src="images/posters/Poster-Facundo_Conte.webp"
+            class="drop-shadow-2xl hover:shadow-3xl hover:cursor-pointer transition duration-200 ease-in-out"
+            id="facundo_conte" data-name="gallery" data-category="posters" />
         </div>
         <div class="xl:ml-6 lg:ml-4 ml-2" data-aos="fade-right">
-          <img src="images/posters/Poster-Zaksa.webp" id="zaksa" class="drop-shadow-2xl" data-name="gallery"
-            data-category="posters" />
+          <img src="images/posters/Poster-Zidane.webp"
+            class="drop-shadow-2xl hover:shadow-3xl hover:cursor-pointer transition duration-200 ease-in-out" id="zizou"
+            data-name="gallery" data-category="posters" />
         </div>
       </div>
 
       <div class="flex xl:mb-12 lg:mb-8 mb-4">
         <div class="xl:mr-6 lg:mr-4 mr-2" data-aos="fade-left">
-          <img src="images/posters/Poster-Facundo_Conte.webp" class="drop-shadow-2xl" id="facundo_conte"
-            data-name="gallery" data-category="posters" />
+          <img src="images/posters/Poster-Golden_State.webp"
+            class="drop-shadow-2xl hover:shadow-3xl hover:cursor-pointer transition duration-200 ease-in-out"
+            id="golden_state" data-name="gallery" data-category="posters" />
         </div>
         <div class="xl:ml-6 lg:ml-4 ml-2" data-aos="fade-right">
-          <img src="images/posters/Poster-Zidane.webp" class="drop-shadow-2xl" id="zizou" data-name="gallery"
-            data-category="posters" />
+          <img src="images/posters/Poster-Greek-Freak.webp"
+            class="drop-shadow-2xl hover:shadow-3xl hover:cursor-pointer transition duration-200 ease-in-out"
+            id="greek_freak" data-name="gallery" data-category="posters" />
         </div>
       </div>
 
       <div class="flex xl:mb-12 lg:mb-8 mb-4">
         <div class="xl:mr-6 lg:mr-4 mr-2" data-aos="fade-left">
-          <img src="images/posters/Poster-Golden_State.webp" class="drop-shadow-2xl" id="golden_state"
-            data-name="gallery" data-category="posters" />
-        </div>
-        <div class="xl:ml-6 lg:ml-4 ml-2" data-aos="fade-right">
-          <img src="images/posters/Poster-Greek-Freak.webp" class="drop-shadow-2xl" id="greek_freak" data-name="gallery"
-            data-category="posters" />
-        </div>
-      </div>
-
-      <div class="flex xl:mb-12 lg:mb-8 mb-4">
-        <div class="xl:mr-6 lg:mr-4 mr-2" data-aos="fade-left">
-          <img src="images/posters/Poster-Kubiak.webp" class="drop-shadow-2xl" id="michal_kubiak" data-name="gallery"
-            data-category="posters" />
+          <img src="images/posters/Poster-Kubiak.webp"
+            class="drop-shadow-2xl hover:shadow-3xl hover:cursor-pointer transition duration-200 ease-in-out"
+            id="michal_kubiak" data-name="gallery" data-category="posters" />
         </div>
       </div>
 
       <div class="flex xl:mb-12 lg:mb-8 mb-4 w-1/2">
         <div class="xl:mr-6 lg:mr-4 mr-2" data-aos="fade-left">
-          <img src="images/posters/Poster-Jaglar.webp" class="drop-shadow-2xl" id="dominik_jaglarski"
-            data-name="gallery" data-category="posters" />
+          <img src="images/posters/Poster-Jaglar.webp"
+            class="drop-shadow-2xl hover:shadow-3xl hover:cursor-pointer transition duration-200 ease-in-out"
+            id="dominik_jaglarski" data-name="gallery" data-category="posters" />
         </div>
       </div>
 
-      <div class="container flex justify-between">
-        <div>
+      <div class="container">
+        <p class="xl:text-2xl lg:text-xl md:text-lg text-md mb-8 font-medium">Zobacz również</p>
 
-          <img src="images/Wypełnienie kolorem 4.webp" />
-        </div>
-        <div>
+        <div class="flex justify-between">
+          <div class="relative overflow-hidden hover:cursor-pointer">
+            <a href="sponsorship-offers.html">
+              <img src="images/check also/oferty sponsorskie.webp"
+                class="hover:scale-105 duration-300 drop-shadow-2xl" />
+              <h3
+                class="xl:text-2xl lg:text-xl md:text-lg text-md font-semibold absolute left-1/2 top-1/2 w-full -translate-y-1/2 -translate-x-1/2">
+                Oferty sponsorskie
+              </h3>
+            </a>
+          </div>
 
-          <img src="images/Wypełnienie kolorem 4.webp" />
-        </div>
-        <div>
+          <div class="relative overflow-hidden hover:cursor-pointer">
+            <a href="socials.html">
+              <img src="images/check also/media społecznościowe.webp"
+                class="hover:scale-105 duration-300 drop-shadow-2xl" />
+              <h3
+                class="xl:text-2xl lg:text-xl md:text-lg text-md font-semibold absolute left-1/2 top-1/2 w-full -translate-y-1/2 -translate-x-1/2">
+                Media społecznościowe
+              </h3>
+            </a>
+          </div>
 
-          <img src="images/Wypełnienie kolorem 4.webp" />
+          <div class="relative overflow-hidden hover:cursor-pointer">
+            <a href="branding.html">
+              <img src="images/check also/identyfikacja wizualna.webp"
+                class="hover:scale-105 duration-300 drop-shadow-2xl" />
+              <h3
+                class="xl:text-2xl lg:text-xl md:text-lg text-md font-semibold absolute left-1/2 top-1/2 w-full -translate-y-1/2 -translate-x-1/2">
+                Identyfikacja wizualna
+              </h3>
+            </a>
+          </div>
         </div>
+
       </div>
 
     </div>
