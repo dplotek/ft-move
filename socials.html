@@ -20,6 +20,9 @@
             'main-blue': "#000248",
             'main-red': "#ff4848"
           },
+          boxShadow: {
+            '3xl': '0px 0px 55px 16px rgba(255, 72, 72, 0.55)',
+          },
           backgroundImage: {
             'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
           }
@@ -118,9 +121,15 @@
         Instagram czy Twitter.
       </p>
 
-      <img src="images/socials/socials-1.webp" class="mb-12 drop-shadow-2xl" data-aos="zoom-in-up" />
-      <img src="images/socials/socials-2.webp" class="mb-12 drop-shadow-2xl" data-aos="zoom-in-up" />
-      <img src="images/socials/socials-3.webp" class="mb-12 drop-shadow-2xl" data-aos="zoom-in-up" />
+      <img src="images/socials/socials-1.webp"
+        class="mb-12 drop-shadow-2xl hover:shadow-3xl hover:cursor-pointer transition duration-200 ease-in-out"
+        data-aos="zoom-in-up" data-name="gallery" data-category="socials" id="social1" />
+      <img src="images/socials/socials-2.webp"
+        class="mb-12 drop-shadow-2xl hover:shadow-3xl hover:cursor-pointer transition duration-200 ease-in-out"
+        data-aos="zoom-in-up" data-name="gallery" data-category="socials" id="social2" />
+      <img src="images/socials/socials-3.webp"
+        class="mb-12 drop-shadow-2xl hover:shadow-3xl hover:cursor-pointer transition duration-200 ease-in-out"
+        data-aos="zoom-in-up" data-name="gallery" data-category="socials" id="social3" />
 
       <div class="container mx-auto pt-32 text-center relative px-6 bg-main-blue">
         <p class="xl:text-2xl lg:text-xl md:text-lg text-md mb-6 font-medium">Pełny projekt dostępny na</p>
@@ -221,7 +230,7 @@
       </div>
     </div>
   </footer>
-
+  <script src="scripts/gallery.js"></script>
   <script src="scripts/utils.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>

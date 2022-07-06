@@ -103,7 +103,7 @@ let postersUtils = [
     src: "images/posters/Poster-Jaglar.webp",
   },
   {
-    id: "billboard",
+    id: "billboard1",
     name: "Projekt bilboardu klubowego",
     category: "branding",
     src: "images/branding/projekt_bilboardu_klubowego.webp"
@@ -149,6 +149,133 @@ let postersUtils = [
     name: "Maseczka klubowa",
     category: "branding",
     src: "images/branding/maseczka_klubowe.webp"
+  },
+  {
+    id: "social1",
+    name: "Posty instagramowe",
+    category: "socials",
+    src: "images/socials/socials-1.webp"
+  },
+  {
+    id: "social2",
+    name: "Posty instagramowe",
+    category: "socials",
+    src: "images/socials/socials-2.webp"
+  }
+  ,
+  {
+    id: "social3",
+    name: "Posty instagramowe",
+    category: "socials",
+    src: "images/socials/socials-3.webp"
+  },
+  {
+    id: "mos-1",
+    name: 'Oferta sponsorska "Mos Wola Warszawa"',
+    category: "sponsorship",
+    src: "images/sponsorship offers/mos-wola-warszawa-1.webp"
+  },
+  {
+    id: "mos-2",
+    name: 'Oferta sponsorska "Mos Wola Warszawa"',
+    category: "sponsorship",
+    src: "images/sponsorship offers/mos-wola-warszawa-2.webp"
+  },
+  {
+    id: "mos-3",
+    name: 'Oferta sponsorska "Mos Wola Warszawa"',
+    category: "sponsorship",
+    src: "images/sponsorship offers/mos-wola-warszawa-3.webp"
+  },
+  {
+    id: "mos-4",
+    name: 'Oferta sponsorska "Mos Wola Warszawa"',
+    category: "sponsorship",
+    src: "images/sponsorship offers/mos-wola-warszawa-4.webp"
+  },
+  {
+    id: "mos-5",
+    name: 'Oferta sponsorska "Mos Wola Warszawa"',
+    category: "sponsorship",
+    src: "images/sponsorship offers/mos-wola-warszawa-5.webp"
+  },
+  {
+    id: "mos-6",
+    name: 'Oferta sponsorska "Mos Wola Warszawa"',
+    category: "sponsorship",
+    src: "images/sponsorship offers/mos-wola-warszawa-6.webp"
+  },
+  {
+    id: "panki-1",
+    name: 'Oferta sponsorska "SPS Panki"',
+    category: "sponsorship",
+    src: "images/sponsorship offers/sps-panki-1.webp"
+  },
+  {
+    id: "panki-2",
+    name: 'Oferta sponsorska "SPS Panki"',
+    category: "sponsorship",
+    src: "images/sponsorship offers/sps-panki-2.webp"
+  },
+  {
+    id: "panki-3",
+    name: 'Oferta sponsorska "SPS Panki"',
+    category: "sponsorship",
+    src: "images/sponsorship offers/sps-panki-3.webp"
+  },
+  {
+    id: "panki-4",
+    name: 'Oferta sponsorska "SPS Panki"',
+    category: "sponsorship",
+    src: "images/sponsorship offers/sps-panki-4.webp"
+  },
+  {
+    id: "panki-5",
+    name: 'Oferta sponsorska "SPS Panki"',
+    category: "sponsorship",
+    src: "images/sponsorship offers/sps-panki-5.webp"
+  },
+  {
+    id: "panki-6",
+    name: 'Oferta sponsorska "SPS Panki"',
+    category: "sponsorship",
+    src: "images/sponsorship offers/sps-panki-6.webp"
+  },
+  {
+    id: "witkos-1",
+    name: 'Oferta sponsorska "Głowacki/Witkoś"',
+    category: "sponsorship",
+    src: "images/sponsorship offers/glowacki-witkos-1.webp"
+  },
+  {
+    id: "witkos-2",
+    name: 'Oferta sponsorska "Głowacki/Witkoś"',
+    category: "sponsorship",
+    src: "images/sponsorship offers/glowacki-witkos-2.webp"
+  },
+  {
+    id: "witkos-3",
+    name: 'Oferta sponsorska "Głowacki/Witkoś"',
+    category: "sponsorship",
+    src: "images/sponsorship offers/glowacki-witkos-3.webp"
+  },
+  {
+    id: "witkos-4",
+    name: 'Oferta sponsorska "Głowacki/Witkoś"',
+    category: "sponsorship",
+    src: "images/sponsorship offers/glowacki-witkos-4.webp"
+  },
+  {
+    id: "witkos-5",
+    name: 'Oferta sponsorska "Głowacki/Witkoś"',
+    category: "sponsorship",
+    src: "images/sponsorship offers/glowacki-witkos-5.webp"
+  },
+  {
+    id: "witkos-6",
+    name: 'Oferta sponsorska "Głowacki/Witkoś"',
+    category: "sponsorship",
+    src: "images/sponsorship offers/glowacki-witkos-6.webp"
   }
 ]
 
@@ -170,7 +297,7 @@ const createPopup = () => {
 
   //container
   const container = document.createElement("div")
-  container.classList.add("relative", "h-full", "flex", "justify-center", "flex-col", "flex-end")
+  container.classList.add("relative", "h-full", "flex", "justify-center", "flex-col", "flex-end", "max-w-[850px]")
   wrapper.appendChild(container)
 
   const closeButtonContainer = document.createElement("div")
@@ -189,7 +316,7 @@ const createPopup = () => {
   //image
   const image = document.createElement("img")
   image.setAttribute("src", postersUtils[currentImgIndex].src)
-  image.classList.add("md:h-full")
+  image.classList.add("md:max-h-full")
   container.appendChild(image)
 
   //descriptionBox
