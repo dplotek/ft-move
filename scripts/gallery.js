@@ -101,6 +101,54 @@ let postersUtils = [
     name: "Dominik Jaglarski",
     category: "posters",
     src: "images/posters/Poster-Jaglar.webp",
+  },
+  {
+    id: "billboard",
+    name: "Projekt bilboardu klubowego",
+    category: "branding",
+    src: "images/branding/projekt_bilboardu_klubowego.webp"
+  },
+  {
+    id: "mw-logo",
+    name: "Logo na siatce",
+    category: "branding",
+    src: "images/branding/logo_na_siatce.webp"
+  },
+  {
+    id: "stickers",
+    name: "Wlepki klubowe",
+    category: "branding",
+    src: "images/branding/wlepki_klubowe.webp"
+  },
+  {
+    id: "brief-case",
+    name: "Teczki klubowe",
+    category: "branding",
+    src: "images/branding/teczki_klubowe.webp"
+  },
+  {
+    id: "pins",
+    name: "Przypinki klubowe",
+    category: "branding",
+    src: "images/branding/przypinki_klubowe.webp"
+  },
+  {
+    id: "t-shirts",
+    name: "Projekt strojów klubowych",
+    category: "branding",
+    src: "images/branding/projekt_strojow_klubowych.webp"
+  },
+  {
+    id: "mw-billboard",
+    name: "Klubowy herb na materiale",
+    category: "branding",
+    src: "images/branding/klubowy_herb_na_materiale.webp"
+  },
+  {
+    id: "face-mask",
+    name: "Maseczka klubowa",
+    category: "branding",
+    src: "images/branding/maseczka_klubowe.webp"
   }
 ]
 
