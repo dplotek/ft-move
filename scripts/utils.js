@@ -1,22 +1,6 @@
 const navbar = document.querySelector("nav")
 let open = false
 const menuItems = document.getElementById("menu-items")
-
-window.addEventListener("scroll", () => {
-  const yOffset = window.pageYOffset
-  const homePath = location.pathname === "/index.html"
-
-  if (homePath) {
-    if (yOffset > 10) {
-      navbar.classList.add("bg-main-red")
-      navbar.classList.remove("lg:bg-transparent")
-    } else {
-      navbar.classList.add("lg:bg-transparent")
-    }
-  }
-
-})
-
 const hamburger = document.getElementById("hamburger")
 const hamburger1 = document.getElementById("hamburger1")
 const hamburger2 = document.getElementById("hamburger2")
