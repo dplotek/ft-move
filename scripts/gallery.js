@@ -422,6 +422,10 @@ const createPopup = () => {
     }
 
     descriptionHeader.textContent = postersUtils[currentImgIndex].name
+    instagramHref.setAttribute("href", postersUtils[currentImgIndex].instagram)
+    behanceHref.setAttribute("href", postersUtils[currentImgIndex].behance)
+    facebookHref.setAttribute("href", postersUtils[currentImgIndex].facebook)
+    pinterestHref.setAttribute("href", postersUtils[currentImgIndex].pinterest)
 
     currentImgIndex !== galleryLength - 1 ? container.appendChild(nextArrow) : container.removeChild(nextArrow)
     currentImgIndex !== 0 ? container.appendChild(prevArrow) : container.removeChild(prevArrow)
@@ -476,6 +480,10 @@ const createPopup = () => {
     image.setAttribute("src", postersUtils[currentImgIndex].src)
 
     descriptionHeader.textContent = postersUtils[currentImgIndex].name
+    instagramHref.setAttribute("href", postersUtils[currentImgIndex].instagram)
+    behanceHref.setAttribute("href", postersUtils[currentImgIndex].behance)
+    facebookHref.setAttribute("href", postersUtils[currentImgIndex].facebook)
+    pinterestHref.setAttribute("href", postersUtils[currentImgIndex].pinterest)
 
     currentImgIndex !== 0 ? container.appendChild(prevArrow) : container.removeChild(prevArrow)
     currentImgIndex !== galleryLength - 1 ? container.appendChild(nextArrow) : container.removeChild(nextArrow)
