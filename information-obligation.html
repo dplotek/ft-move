@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/bhj0eks.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          'termina': ['Termina']
+        },
+        extend: {
+          colors: {
+            'main-blue': "#000248",
+            'main-red': "#ff4848"
+          },
+          boxShadow: {
+            '3xl': '0px 0px 55px 16px rgba(255, 72, 72, 0.55)',
+          },
+          backgroundImage: {
+            'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+          }
+        }
+      }
+    }
+  </script>
+  <title>Move Desing Agency</title>
+</head>
+
+<body class="min-h-screen font-['Termina']">
+  <nav class="fixed left-0 top-0 lg:block w-full z-[100] drop-shadow-2xl h-fit bg-main-red px-6">
+    <div class="container mx-auto my-4 flex justify-between text-white flex-col lg:flex-row">
+      <div class="flex h-full justify-between items-center">
+        <a href="index.html">
+          <img src="./images/Move_Logo.png" alt="logo" class="w-48 mt-0 lg:mt-1">
+        </a>
+
+        <div class="lg:hidden flex flex-col justify-between z-[101] duration-500" id="hamburger">
+          <button class="text-white w-10 h-10 bg-transparent relative">
+            <div class="flex items-center justify-center relative">
+              <span id="hamburger1"
+                class="flex absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out translate-y-1.5">
+              </span>
+              <span id="hamburger2"
+                class="flex absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out"></span>
+              <span id="hamburger3"
+                class="flex absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out -translate-y-1.5"></span>
+            </div>
+          </button>
+        </div>
+      </div>
+
+
+      <div class="lg:flex hidden lg:items-center md:items-start flex-col lg:flex-row duration-500" id="menu-items">
+        <ul class="flex text-xl font-bold flex-col lg:flex-row lg:my-0 my-4">
+          <li class="mr-14 md:my-2 hover:scale-110 transition duration-200 ease-in-out">
+            <a href="about-us.html">
+              O NAS
+            </a>
+          </li>
+          <li class="hover:scale-110 transition duration-200 ease-in-out">
+            <a href="portfolio.html">
+              <button class="mr-14 md:my-2">PORTFOLIO</button>
+            </a>
+          </li>
+          <li class="mr-14 md:my-2 hover:scale-110 transition duration-200 ease-in-out">
+            <a href="contact.html">
+              KONTAKT
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <section class="w-100 bg-main-blue py-32 px-8">
+
+    <div class="absolute top-0 left-0 w-full min-h-screen">
+      <div class="flex w-full absolute h-full rotate-180 2xl-top-96: xl:-top-48 -top-48" style="
+      background: radial-gradient(circle farthest-side,#ff4848, transparent);
+      background-size: 100% 200%;
+      ">
+      </div>
+    </div>
+
+    <div class="text-white relative ">
+      <h2 class="xl:text-2xl lg:text-xl md:text-lg text-md font-semibold">OBOWIĄZEK INFORMACYJNY</h2>
+      <p class="mt-12">Administratorem danych osobowych Użytkownika udostępnionych za pośrednictwem Serwisu, czyli
+        podmiotem decydującym o celach i sposobach ich przetwarzania, jest Filip
+        Troczyński move, ul. Winiarska nr 1-3 lok. 12, 62-800 Kalisz, NIP 6182193484, (dalej jako „Administrator”).</p>
+      <p class="mt-6">
+        Podane przez Użytkownika dane osobowe są przetwarzane przez Administratora na podstawie zgody wyrażonej przez
+        Użytkownika, w rozumieniu art. 6 ust. 1 lit. a)Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z
+        dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w
+        sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE - zwanego dalej RODO.
+      </p>
+      <p class="mt-6">
+        Podanie danych osobowych za pośrednictwem Serwisu jest dobrowolne. Użytkownik ma prawo do cofnięcia wyrażonej
+        zgody w dowolnym momencie poprzez kontakt z Administratorem kontakt@move-agency.pl bez wpływu na zgodność z
+        prawem przetwarzania, którego dokonano na podstawie zgody przed jej cofnięciem.
+      </p>
+      <p class="mt-6">
+        Użytkownikowi przysługuje prawo dostępu do swoich danych osobowych w każdym czasie, ich sprostowania, usunięcia
+        lub ograniczenia przetwarzania oraz prawo do wniesienia sprzeciwu wobec przetwarzania, a także prawo do
+        przenoszenia danych.
+      </p>
+      <p class="mt-6">Administrator przetwarza dane osobowe Użytkownika Serwisu w następujących celach:</p>
+      <p class="mt-4">
+        1. Komunikacji z Użytkownikiem, w szczególności obsługi reklamacji dotyczących produktów lub usług
+        Administratora; <br />
+        2. Przedstawiania Użytkownikowi ofert handlowych drogą elektroniczną; <br />
+        3. Przedstawiania Użytkownikowi ofert handlowych w kontakcie telefonicznym;<br />
+        4. Umożliwienia Użytkownikowi przesyłania komentarzy lub opinii dotyczących produktów lub usług
+        Administratora.<br />
+      </p>
+      <p class="mt-6">Administrator może przetwarzać dane osobowe Użytkownika pozyskane za pośrednictwem Serwisu również
+        w następujących celach:</p>
+      <p class="mt-4">
+        1. w celu zawarcia i realizacji ewentualnej umowy pomiędzy Użytkownikiem a Administratorem oraz obsługi
+        Użytkownika jako klienta Administratora zgodnie z art. 6 ust. 1 lit. b) RODO;<br />
+        2. w celu prowadzenia rozliczeń finansowych z Użytkownikiem będącym klientem Administratora tytułem realizacji
+        ewentualnej umowy zawartej między stronami, a także ewentualnego dochodzenia roszczeń od Użytkownika będącego
+        klientem w ramach prawnie uzasadnionego interesu Administratora zgodnie z art. 6 ust. 1 lit. f) RODO oraz
+        spełnienia obowiązków prawnych Administratora wobec organów podatkowych na podstawie odrębnych przepisów zgodnie
+        z art. 6 ust. 1 lit. c) RODO;<br />
+        3. w celu realizacji działań marketingowych Administratora w ramach prawnie uzasadnionego interesu
+        Administratora w rozumieniu art. 6 ust. 1 lit. f) RODO, a także zgodnie z oświadczeniami woli dotyczącymi
+        komunikacji marketingowej złożonymi wobec Administratora. Zgody udzielone w zakresie komunikacji marketingowej
+        (np. na przesyłanie informacji handlowych drogą elektroniczną lub kontakt telefoniczny w celach marketingu
+        bezpośredniego) mogą być wycofane w dowolnym czasie, bez wpływu na zgodność z prawem przetwarzania, którego
+        dokonano na podstawie zgody przed jej cofnięciem;<br />
+        4. w celu realizacji obowiązków prawnych Administratora wobec Użytkownika określonych w RODO, w rozumieniu art.
+        6 ust. 1 lit. c) RODO.<br />
+      </p>
+      <p>Więcej informacji dotyczących powyższych celów przetwarzania danych osobowych Użytkownika znajduje się w <a
+          href="privacy-policy.html">Polityce prywatności</a> opublikowanej w Serwisie.</p>
+      <p class="mt-6">Dane osobowe Użytkownika nie są przekazywane przez Administratora podmiotom trzecim.</p>
+      <p class="mt-6">Administrator przechowuje dane osobowe przez taki okres, jaki jest konieczny do osiągnięcia
+        określonych celów, tj.: przez okres prowadzenia działalności gospodarczej przez Administratora.</p>
+      <p class="mt-6">W przypadku jakichkolwiek pytań lub problemów związanych z przetwarzaniem danych osobowych należy
+        kontaktować się z Administratorem pod następującym adresem: ul. Winiarska nr 1-3 lok. 12, 62-800 Kalisz,
+        kontakt@move-agency.pl</p>
+      <p class="mt-6">Użytkownik ma prawo do wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych.</p>
+    </div>
+  </section>
+
+  <footer class="bg-main-red text-white py-24 px-6">
+    <div class="container mx-auto grid lg:grid-cols-4 md:grid-cols-1 gap-4 text-left">
+      <div class="mb-4 mt-1">
+        <img src="./images/Move_Logo.png" alt="logo" class="w-48">
+      </div>
+
+      <div class="mb-4">
+        <h3 class="text-xl font-bold mb-3 mt-2">KONTAKT:</h3>
+        <div class="flex flex-col">
+          <a class="text-lg" href="mailto:biuro@move-agency.com">biuro@move-agency.com</a>
+          <a class="text-lg" href="tel:+48 791 243 101">+48 791 243 101</a>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <h3 class="text-xl font-bold mb-3 mt-2">DANE FIRMY:</h3>
+        <div class="flex flex-col">
+          <p class="text-lg">NIP: 6182193484</p>
+          <p class="text-lg">REGON: 522259969</p>
+          <p class="text-lg">
+            <a href="privacy-policy.html">Polityka prywatności</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <h3 class="text-xl font-bold mb-3 mt-2">ZNAJDŹ NAS:</h3>
+        <div class="flex items-center">
+
+          <a href="https://www.facebook.com/Move-sport-branding-agency-100158012756612" noreferer noopener
+            target="_blank">
+            <img src="./images/social icons/fb-logo.png" alt="" class="mr-4 h-[30px]">
+          </a>
+
+          <a href="https://www.instagram.com/move_project_sport/?fbclid=IwAR3HeyuThm0AJ-WJMkqLDHHGVq4Ch-tdg_Q4QjnycMTTV6b606z6uPuzOxw"
+            noreferer noopener target="_blank">
+            <img src="./images/social icons/instagram-logo.png" alt="" class="mr-4 h-[31px]">
+          </a>
+
+          <a href="https://www.behance.net/ftdesign4u?fbclid=IwAR1fkkSD_d-n8ECLdT9qiqGuaf2KhR3pW1GXzESypZwLyAmaVAEVxu72m30"
+            noreferer noopener target="_blank">
+            <img src="./images/social icons/behance-logo.png" alt="" class="mr-4 h-[27px]">
+          </a>
+          <a href="https://pl.pinterest.com/move_project_sport/sport-poster-design/?fbclid=IwAR3JFyhyiukJ_z8qvqw8z3sM6yN_bK0aiMP5WgX1fYZUS33JjsexPNA1B5o"
+            noreferer noopener target="_blank">
+            <img src="./images/social icons/pinterest-logo.png" alt="" class="mr-4 h-[30px]">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="scripts/utils.js"></script>
+</body>
+
+</html>
