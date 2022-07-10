@@ -95,12 +95,15 @@ let postersUtils = [
     name: "Michał Kubiak",
     category: "posters",
     src: "images/posters/Poster-Kubiak.webp",
+    pinterest: "https://pl.pinterest.com/pin/603834262553539556/",
+    intagram: "https://www.instagram.com/p/CfE6qT-Dvrw/"
   },
   {
     id: "dominik_jaglarski",
     name: "Dominik Jaglarski",
     category: "posters",
     src: "images/posters/Poster-Jaglar.webp",
+    instagram: "https://www.instagram.com/p/CdvJJT_q-aX/"
   },
   {
     id: "billboard1",
